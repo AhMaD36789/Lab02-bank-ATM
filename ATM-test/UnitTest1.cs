@@ -7,6 +7,7 @@ namespace ATM_test
     {
 
         [Fact]
+        // Test a normal withdraw function execution
         public void WithdrawTrue()
         {
             //ar
@@ -18,8 +19,10 @@ namespace ATM_test
         }
 
         [Fact]
+        //Test if withdraw amount is greater than the balance in the account
         public void WithdrawFalse1()
         {
+
             //ar
             Program.balance = 100;
             //ac
@@ -29,6 +32,7 @@ namespace ATM_test
         }
 
         [Fact]
+        //Test if the withdraw amount is less than or equal zero
         public void WithdrawFalse2()
         {
             //ar
@@ -40,6 +44,7 @@ namespace ATM_test
         }
 
         [Fact]
+        //Test correct Deposit attempt
         public void DepositTrue()
         {
             //ar
@@ -51,6 +56,7 @@ namespace ATM_test
         }
 
         [Fact]
+        //Test if Deposit is less than or equal zero
         public void DepositFalse()
         {
             //ar
