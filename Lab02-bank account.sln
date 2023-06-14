@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab02-bank account", "Lab02-bank account\Lab02-bank account.csproj", "{700C01FB-A7A4-4B44-8FB3-262922B9F748}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bank-testing", "bank-testing\bank-testing.csproj", "{64F60499-A083-4FE1-8A67-76CF9C482D5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM-test", "ATM-test\ATM-test.csproj", "{A3C4173D-52D1-43E2-A3C7-3AA82F375968}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{700C01FB-A7A4-4B44-8FB3-262922B9F748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{700C01FB-A7A4-4B44-8FB3-262922B9F748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{700C01FB-A7A4-4B44-8FB3-262922B9F748}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64F60499-A083-4FE1-8A67-76CF9C482D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64F60499-A083-4FE1-8A67-76CF9C482D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64F60499-A083-4FE1-8A67-76CF9C482D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64F60499-A083-4FE1-8A67-76CF9C482D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C4173D-52D1-43E2-A3C7-3AA82F375968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C4173D-52D1-43E2-A3C7-3AA82F375968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C4173D-52D1-43E2-A3C7-3AA82F375968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C4173D-52D1-43E2-A3C7-3AA82F375968}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
