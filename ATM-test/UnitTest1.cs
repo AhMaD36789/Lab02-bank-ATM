@@ -6,7 +6,6 @@ namespace ATM_test
     public class UnitTest1
     {
 
-
         [Fact]
         public void WithdrawTrue()
         {
@@ -19,12 +18,23 @@ namespace ATM_test
         }
 
         [Fact]
-        public void WithdrawFalse()
+        public void WithdrawFalse1()
         {
             //ar
             Program.balance = 100;
             //ac
             decimal result = Program.Withdraw(150);
+            //as
+            Assert.Equal(-1M, result);
+        }
+
+        [Fact]
+        public void WithdrawFalse2()
+        {
+            //ar
+            Program.balance = 100;
+            //ac
+            decimal result = Program.Withdraw(-5);
             //as
             Assert.Equal(-1M, result);
         }

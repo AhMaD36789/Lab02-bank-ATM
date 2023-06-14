@@ -2,8 +2,8 @@
 {
     public class Program
     {
-        public static decimal balance = 10;
-        public static string[] actions = new string[10];
+        public static decimal balance = 0;
+        public static string[] actions = new string[100];
         public static int actionCount = 0;
         static void Main(string[] args)
         {
@@ -27,6 +27,10 @@
         }
         public static decimal ViewBalance()
         {
+            if (balance < 1)
+            {
+                balance = 0;
+            }
             return balance;
         }
         public static decimal Withdraw(decimal amount)
@@ -36,7 +40,7 @@
                 Console.WriteLine("\nRequired withdraw amount is greater than current balance \n");
                 return -1;
             }
-            if (amount < 0)
+            if (amount < 1)
             {
                 Console.WriteLine("\nRequired withdraw amount is negative or zero \n");
                 return -1;
@@ -48,9 +52,9 @@
         }
         public static decimal Deposit(decimal amount)
         {
-            if (amount < 0)
+            if (amount < 1)
             {
-                Console.WriteLine("\nDeposit amount is negative. Would you like to Withdraw instead ?\n");
+                Console.WriteLine("\nDeposit amount is negative or zero. Would you like to Withdraw instead ?\n");
                 return -1;
             }
             balance += amount;
