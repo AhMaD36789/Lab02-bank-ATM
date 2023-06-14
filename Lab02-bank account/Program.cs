@@ -24,11 +24,12 @@
             if (amount > balance)
             {
                 Console.WriteLine("\nRequired withdraw amount is greater than current balance \n");
-                UserInterface();
+                return -1;
             }
             if (amount < 0)
             {
                 Console.WriteLine("\nRequired withdraw amount is negative or zero \n");
+                return -1;
             }
             balance -= amount;
             return balance;
@@ -38,6 +39,7 @@
             if (amount < 0)
             {
                 Console.WriteLine("\nDeposit amount is negative. Would you like to Withdraw instead ?\n");
+                return -1;
             }
             balance += amount;
             return balance;
